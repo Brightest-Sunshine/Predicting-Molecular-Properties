@@ -33,7 +33,7 @@
 
 Теперь Eterna стремится ускорить создание устойчивых мРНК-вакцин для борьбы с COVID-19.
 
-![Eterna]([https://github.com/Brightest-Sunshine/Vaccine-Degradation-Prediction/blob/master/mRNA.png](https://github.com/Brightest-Sunshine/Vaccine-Degradation-Prediction/blob/master/eterna.png)
+![Eterna](https://github.com/Brightest-Sunshine/Vaccine-Degradation-Prediction/blob/master/eterna.png)
 
 ## Постановка задачи
 
@@ -47,9 +47,9 @@
 
 Модель оценивается по метрике **MCRMSE** (*Mean Columnwise Root Mean Squared Error*), которая рассчитывается следующим образом:
 
-\[
+$$
 \text{MCRMSE} = \frac{1}{N_t} \sum_{j=1}^{N_t} \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_{ij} - \hat{y}_{ij})^2}
-\]
+$$
 
 Где:
 - \( N_t \) — количество целевых колонок (в данном случае 3: `reactivity`, `deg_Mg_pH10`, `deg_Mg_50C`),
